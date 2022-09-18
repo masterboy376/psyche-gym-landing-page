@@ -1,0 +1,17 @@
+*{
+  padding: 0;
+  margin: 0;
+  /* background-color: #18181b; */
+}
+
+.header-section::before{
+  content: '';
+  position: absolute;
+  top: -500px;
+  right: -500px;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 1000px;
+  background-color: rgb(249, 115, 22);
+  /* clip-path: polygon(0 0, 100% 100%, 100% 0); */
+}
