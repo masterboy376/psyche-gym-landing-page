@@ -13,9 +13,9 @@ function App() {
           <div className="sm:hidden w-full mb-4">
             <div className="mx-auto w-72 h-96 bg-orange-300"></div>
           </div>
-          <div className="sm:w-1/2 w-full sm:px-0 px-4">
-            <p className="sm:text-4xl font-bold text-2xl mb-2">Gym for true Gymers!</p>
-            <p className="sm:text-lg text-base">Get your self in shape with our highly profficient trainers | Various programs for everyone | Complete assistance | Competition opportunities</p>
+          <div className="sm:w-1/2 w-full sm:px-0 px-4 ">
+            <p className="sm:text-4xl text-center font-bold text-2xl mb-2">Gym for true Gymers!</p>
+            <p className="sm:text-lg text-center text-base">Get your self in shape with our highly profficient trainers | Various programs for everyone | Complete assistance | Competition opportunities</p>
           </div>
           <div className="sm:w-1/2 hidden sm:flex">
             <div className="mx-auto w-72 h-96 bg-orange-300 justify-self-end"></div>
@@ -24,7 +24,7 @@ function App() {
       </header>
 
       {/* programs */}
-      <section id='programs' className="container  h-screen flex flex-col items-center mx-auto">
+      <section id='programs' className="container my-10 mx-auto">
       <p className="sm:text-4xl font-bold text-2xl mb-8 sm:px-0 px-4 text-center">Programs</p>
       <div className='flex sm:justify-evenly justify-start overflow-x-auto w-full'>
         <ProgramCard imgUrl={'abc'} title={'Weight Loss'} body={''}/>
@@ -36,11 +36,11 @@ function App() {
 
       {/* memberships */}
       <section id='memberships' className="container mx-auto">
-      <p className="sm:text-4xl font-bold text-2xl mb-8 mt-20 sm:px-0 px-4 text-center">Members</p>
+      <p className="sm:text-4xl font-bold text-2xl mb-8 mt-20 sm:px-0 px-4 text-center">Memberships</p>
       <div className='flex sm:justify-evenly justify-start overflow-x-auto'>
-        <MembershipCard imgUrl={'abc'} title={'Weight Loss'} body={''}/>
-        <MembershipCard imgUrl={'abc'} title={'Muscle Gain'} body={''}/>
-        <MembershipCard imgUrl={'abc'} title={'Cardio'} body={''}/>
+        <MembershipCard price={999.00} center={false} title={'Starter'} details={[ ['Program flexibility.',true], ['Complete access to all the equipments for workout.',true], ['10 hrs / week maximum time limit,',true], ['Diet and suppliment support.',false], ['Personalised trainer.',false], ['Access to various gyming competition.',false], ['Injury insurance.', false] ]}/>
+        <MembershipCard price={1999.00} center={true} title={'Advanced'} details={[ ['Program flexibility.',true], ['Complete access to all the equipments for workout.',true], ['21 hrs / week maximum time limit,',true], ['Diet and suppliment support.',true], ['Personalised trainer.',false], ['Access to various gyming competition.',false], ['Injury insurance.', false] ]}/>
+        <MembershipCard price={4999.00} center={false} title={'Professional'} details={[ ['Program flexibility.',true], ['Complete access to all the equipments for workout.',true], ['No maximum time limit,',true], ['Diet and suppliment support.',true], ['Personalised trainer.',true], ['Access to various gyming competition.',true], ['Injury insurance.', true] ]}/>
       </div>
       </section>
 
