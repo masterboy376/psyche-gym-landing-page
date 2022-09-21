@@ -3,6 +3,21 @@ import './App.css';
 import Footer from './components/Footer';
 import ProgramCard from './components/ProgramCard';
 import MembershipCard from './components/MembershipCard';
+import headerImg from './assests/header.jpg'
+import weightLossImg from './assests/weight-loss.jpg'
+import weightLiftingImg from './assests/weight-lifting.jpg'
+import cardioImg from './assests/cardio.jpg'
+import muscleGainImg from './assests/muscle-gain.jpg'
+import weightLossTrainerImg from './assests/weight-loss-trainer.jpg'
+import weightLiftingTrainerImg from './assests/weight-lifting-trainer.jpg'
+import cardioTrainerImg from './assests/cardio-trainer.jpg'
+import muscleGainTrainerImg from './assests/muscle-gain-trainer.jpg'
+import g1Img from './assests/g1.jpg'
+import g2Img from './assests/g2.jpg'
+import g3Img from './assests/g3.jpg'
+import g4Img from './assests/g4.jpg'
+import g5Img from './assests/g5.jpg'
+import g6Img from './assests/g6.jpg'
 
 function App() {
   return (
@@ -11,14 +26,14 @@ function App() {
       <header id='home' className={`relative w-full h-screen header-section`}>
         <section className={`container z-10 relative flex h-full mx-auto sm:flex-row sm:justify-between sm:items-center flex-col justify-end items-start`}>
           <div className="sm:hidden w-full mb-4">
-            <div className="mx-auto w-72 h-96 rounded-lg bg-orange-300"></div>
+            <img src={headerImg} className="mx-auto w-72 h-96 rounded-lg"/>
           </div>
           <div className="sm:w-1/2 w-full sm:px-0 px-4 ">
             <p className="sm:text-4xl text-center font-bold text-2xl mb-2">Gym for true Gymers!</p>
             <p className="sm:text-lg text-center text-base">Get your self in shape with our highly profficient trainers | Various programs for everyone | Complete assistance | Competition opportunities</p>
           </div>
           <div className="sm:w-1/2 hidden sm:flex">
-            <div className="mx-auto w-72 h-96 rounded-lg bg-orange-300 justify-self-end"></div>
+          <img src={headerImg} className="mx-auto w-72 h-96 rounded-lg justify-self-end"/>
           </div>
         </section>
       </header>
@@ -30,11 +45,11 @@ function App() {
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
         </div>
         <div className='overflow-x-auto'>
-          <div className='flex sm:justify-evenly justify-start overflow-x-auto w-max mx-auto scroll-hidden'>
-            <ProgramCard imgUrl={'abc'} title={'Weight Loss'} body={'dgslg gfgldg gldfgldfgdf gdgldf gldfg dfgkdg dlgdf gdkg dlfgk'} />
-            <ProgramCard imgUrl={'abc'} title={'Muscle Gain'} body={'dgslg gfgldg gldfgldfgdf gdgldf gldfg dfgkdg dlgdf gdkg dlfgk'} />
-            <ProgramCard imgUrl={'abc'} title={'Cardio'} body={'dgslg gfgldg gldfgldfgdf gdgldf gldfg dfgkdg dlgdf gdkg dlfgk'} />
-            <ProgramCard imgUrl={'abc'} title={'Weight Ligting'} body={'dgslg gfgldg gldfgldfgdf gdgldf gldfg dfgkdg dlgdf gdkg dlfgk'} />
+          <div className='grid sm:grid-rows-2 grid-rows-4 grid-flow-col gap-4 overflow-x-auto w-max mx-auto scroll-hidden'>
+            <ProgramCard imgUrl={weightLossImg} title={'Weight Loss'} body={'dgslg gfgldg gldfgldfgdf gdgldf gldfg dfgkdg dlgdf gdkg dlfgk'} />
+            <ProgramCard imgUrl={muscleGainImg} title={'Muscle Gain'} body={'dgslg gfgldg gldfgldfgdf gdgldf gldfg dfgkdg dlgdf gdkg dlfgk'} />
+            <ProgramCard imgUrl={cardioImg} title={'Cardio'} body={'dgslg gfgldg gldfgldfgdf gdgldf gldfg dfgkdg dlgdf gdkg dlfgk'} />
+            <ProgramCard imgUrl={weightLiftingImg} title={'Weight Ligting'} body={'dgslg gfgldg gldfgldfgdf gdgldf gldfg dfgkdg dlgdf gdkg dlfgk'} />
           </div>
         </div>
       </section>
@@ -65,24 +80,24 @@ function App() {
           <div className="flex flex-wrap md:-m-2 -m-1">
             <div className="flex flex-wrap w-1/2">
               <div className="md:p-2 p-1 w-1/2">
-                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="https://dummyimage.com/500x300" />
+                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src={g1Img} />
               </div>
               <div className="md:p-2 p-1 w-1/2">
-                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="https://dummyimage.com/501x301" />
+                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src={g2Img} />
               </div>
               <div className="md:p-2 p-1 w-full">
-                <img alt="gallery" className="w-full h-full object-cover object-center block rounded-lg" src="https://dummyimage.com/600x360" />
+                <img alt="gallery" className="w-full h-full object-cover object-center block rounded-lg" src={g3Img} />
               </div>
             </div>
             <div className="flex flex-wrap w-1/2">
               <div className="md:p-2 p-1 w-full">
-                <img alt="gallery" className="w-full h-full object-cover object-center block rounded-lg" src="https://dummyimage.com/601x361" />
+                <img alt="gallery" className="w-full h-full object-cover object-center block rounded-lg" src={g4Img} />
               </div>
               <div className="md:p-2 p-1 w-1/2">
-                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="https://dummyimage.com/502x302" />
+                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src={g5Img} />
               </div>
               <div className="md:p-2 p-1 w-1/2">
-                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src="https://dummyimage.com/503x303" />
+                <img alt="gallery" className="w-full object-cover h-full object-center block rounded-lg" src={g6Img} />
               </div>
             </div>
           </div>
@@ -99,7 +114,7 @@ function App() {
           <div className="flex flex-wrap -m-4">
             <div className="p-4 lg:w-1/2">
               <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/200x200" />
+                <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src={weightLossTrainerImg} />
                 <div className="flex-grow sm:pl-8">
                   <h2 className="title-font font-medium text-lg text-white">Holden Caulfield</h2>
                   <h3 className="text-gray-500 mb-3">UI Developer</h3>
@@ -109,7 +124,7 @@ function App() {
             </div>
             <div className="p-4 lg:w-1/2">
               <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/201x201" />
+                <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src={muscleGainTrainerImg} />
                 <div className="flex-grow sm:pl-8">
                   <h2 className="title-font font-medium text-lg text-white">Alper Kamu</h2>
                   <h3 className="text-gray-500 mb-3">Designer</h3>
@@ -119,7 +134,7 @@ function App() {
             </div>
             <div className="p-4 lg:w-1/2">
               <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/204x204" />
+                <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src={cardioTrainerImg} />
                 <div className="flex-grow sm:pl-8">
                   <h2 className="title-font font-medium text-lg text-white">Atticus Finch</h2>
                   <h3 className="text-gray-500 mb-3">UI Developer</h3>
@@ -129,7 +144,7 @@ function App() {
             </div>
             <div className="p-4 lg:w-1/2">
               <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
-                <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://dummyimage.com/206x206" />
+                <img alt="team" className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src={weightLiftingTrainerImg} />
                 <div className="flex-grow sm:pl-8">
                   <h2 className="title-font font-medium text-lg text-white">Henry Letham</h2>
                   <h3 className="text-gray-500 mb-3">Designer</h3>
