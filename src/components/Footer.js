@@ -13,9 +13,9 @@ const Footer = () => {
             <a href={'#contact'} className="text-center transition-all duration-500 text-sm sm:text-base cursor-pointer sm:mx-4 mx-1 hover:text-orange-500">Contact</a>
         </div>
         <div className="flex sm:mx-0 mx-auto sm:mt-0 mt-2">
-            <a className="transition-all duration-500 text-base cursor-pointer sm:mx-4 ml-2 hover:text-orange-500"><BsFacebook size={28}/></a>
-            <a className="transition-all duration-500 text-base cursor-pointer sm:mx-4 ml-2 hover:text-orange-500"><BsTwitter size={28}/></a>
-            <a className="transition-all duration-500 text-base cursor-pointer sm:mx-4 ml-2 hover:text-orange-500"><BsInstagram size={28}/></a>
+            <a href='facebook.com' target='_blank' className="transition-all duration-500 text-base cursor-pointer sm:mx-4 ml-2 hover:text-orange-500"><BsFacebook size={28}/></a>
+            <a href='twitter.com' target='_blank' className="transition-all duration-500 text-base cursor-pointer sm:mx-4 ml-2 hover:text-orange-500"><BsTwitter size={28}/></a>
+            <a href='instagram.com' target='_blank' className="transition-all duration-500 text-base cursor-pointer sm:mx-4 ml-2 hover:text-orange-500"><BsInstagram size={28}/></a>
         </div>
     </div>
   )

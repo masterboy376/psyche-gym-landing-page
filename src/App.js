@@ -1,4 +1,4 @@
-import logo from './physhe-logo.svg';
+import logo from './psyche-logo.svg';
 import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -31,14 +31,14 @@ function App() {
         <Navbar logoUrl ={logo}/>
         <section className={`container z-10 relative flex h-full mx-auto sm:flex-row sm:justify-between sm:items-center flex-col justify-center items-center`}>
           <div className="sm:hidden w-full mb-4">
-            <img src={headerImg} className="mx-auto w-96 h-auto rounded-lg" />
+            <img alt='' src={headerImg} className="mx-auto w-96 h-auto rounded-lg" />
           </div>
           <div className="sm:w-1/2 w-full sm:px-0 px-4 ">
             <p className="sm:text-4xl text-center font-bold text-2xl mb-2">Gym for true Gymers!</p>
             <p className="sm:text-lg text-center text-base">Get your self in shape with our highly profficient trainers | Various programs for everyone | Complete assistance | Competition opportunities</p>
           </div>
           <div className="sm:w-1/2 hidden sm:flex">
-            <img src={headerImg} className="mx-auto w-96 h-auto rounded-lg justify-self-end" />
+            <img alt='' src={headerImg} className="mx-auto w-96 h-auto rounded-lg justify-self-end" />
           </div>
         </section>
       </header>
